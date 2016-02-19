@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,25 +12,22 @@ namespace ScheduleDemo.Terminal
     {
         static void Main(string[] args)
         {
-
-            var process = new ScheduleProcess
+            try
             {
-                Enabled = true
-            };
+                var interval = ConfigurationManager.AppSettings["Interval"];
 
-            while (true)
+                var process = new QuartzJobScheduler()
+                {
+                    IntervalInSeconds = Int32.Parse(interval)
+                };
+
+                process.Start();
+                Console.ReadLine();
+
+            }
+            catch (Exception e)
             {
-                var keyPressed = Console.ReadKey();
-                if (keyPressed.Key == ConsoleKey.Q)
-                {
-                    process.Enabled = false;
-                }
-
-                if (keyPressed.Key == ConsoleKey.Enter)
-                {
-                    process.Enabled = true;
-                    process.Start();
-                }
+                Console.WriteLine(e);
             }
         }
     }

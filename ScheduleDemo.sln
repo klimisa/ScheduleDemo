@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleDemo.Terminal", "Sc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleDemo.Processor", "ScheduleDemo.Processor\ScheduleDemo.Processor.csproj", "{358D7463-EEBB-4DB5-82C0-1933B58696C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleDemo.WindowsService", "ScheduleDemo.WindowsService\ScheduleDemo.WindowsService.csproj", "{FFFCBB71-82BC-4C6B-BB01-45CF0C011034}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{358D7463-EEBB-4DB5-82C0-1933B58696C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{358D7463-EEBB-4DB5-82C0-1933B58696C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{358D7463-EEBB-4DB5-82C0-1933B58696C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFFCBB71-82BC-4C6B-BB01-45CF0C011034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFFCBB71-82BC-4C6B-BB01-45CF0C011034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFFCBB71-82BC-4C6B-BB01-45CF0C011034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFFCBB71-82BC-4C6B-BB01-45CF0C011034}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
